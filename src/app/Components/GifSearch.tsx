@@ -116,7 +116,7 @@ const GifSearch: React.FC = () => {
                   alt={gif.title}
                   style={{ maxWidth: '350px', maxHeight: '350px' }}
                 />
-                <button onClick={() => handleFavorite(gif)} className='p-2 shadow-lg rounded-full'>✨</button>
+                <button onClick={() => handleFavorite(gif)} className='p-2 shadow-lg rounded-full'>⭐</button>
               </div>
             ))}
           </div>

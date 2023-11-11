@@ -43,7 +43,7 @@ const Dropdown = () => {
       )}
       {isOpen && user && (
         <div className="dropdown-content">
-          <Link href="/favorite">✨ Favorites</Link>
+          <Link href="/favorite">⭐Favorites</Link>
           <a onClick={handleLogout} style={{ cursor: 'pointer' }}>Logout</a>
         </div>
       )}
