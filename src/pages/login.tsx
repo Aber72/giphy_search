@@ -29,7 +29,7 @@ export default function Login() {
       // Call the signInWithEmailAndPassword function
       await signInWithEmailAndPassword(auth, email, password);
 
-      // If successful, redirect to the search route
+      // If successful,redirect to the search route
       router.push('/search');
     } catch (error) {
       // Handle error, you can show an error message to the user
@@ -39,8 +39,8 @@ export default function Login() {
   };
 
   return (
-    // page for signup started here
-    
+    //page for signup started here
+
     //page title
     <main className="flex min-h-screen flex-col items-center justify-between p-4 md:p-24">
       <Head>
@@ -49,7 +49,7 @@ export default function Login() {
       </Head>
 
 
-        {/* login section started    */}
+        {/* login sectionn started  */}
 
       <div className="bg-white rounded-2xl shadow-2xl flex flex-col md:flex-row w-full md:w-2/3 max-w-4xl">
         <div className="w-full md:w-3/5 p-4 md:p-5">
@@ -96,9 +96,9 @@ export default function Login() {
             </div>
           </div>
         </div>
-            {/* login section ends    */}
+            {/* login section ends */}
 
-            {/* register section started    */}
+            {/* register section started  */}
 
         <div className="w-full md:w-2/5 bg-green-500 text-white rounded-tr-2xl rounded-br-2xl md:py-10 px-4 md:px-12">
           <h2 className="text-xl md:text-3xl font-bold mb-2">Hello Friend!</h2>
@@ -109,7 +109,7 @@ export default function Login() {
           </Link>
         </div>
       </div>
-            {/* register section ends   */}
+            {/* register section ends */}
     </main>
   );
 }

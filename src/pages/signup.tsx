@@ -45,8 +45,8 @@ export default function Signup() {
   };
 
   return (
-    //started signup page.
-    //header  for signup page
+    // started signup page.
+    // header  for signup page
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="bg-white rounded-2xl shadow-2xl flex flex-col w-2/3 max-w-xl">
         <div className="w-18 p-5">
@@ -56,7 +56,7 @@ export default function Signup() {
               <div className="border-2 w-10 border-green-500 inline-block mb-2"></div>
             </div>
 
-            {/* paragraph tag start */}
+            {/*paragraph tag start */}
 
 
             <form onSubmit={handleSignUp}>
@@ -79,7 +79,7 @@ export default function Signup() {
                   />
                 </div>
 
-                {/* textbox for Name ends*/}
+                {/*textbox for Name ends*/}
 
                 {/* textbox for  Email Start*/}
 
@@ -110,7 +110,7 @@ export default function Signup() {
                     required
                   />
                 </div>
-                {/* textbox for Password end*/}
+                {/* textbox for Password end */}
 
                 {/* sign in Button starts*/}
 
@@ -122,10 +122,10 @@ export default function Signup() {
                 </button>
               </div>
 
-              {/* sign in Button end*/}
+              {/* sign in Button end */}
 
             </form>
-            
+
             {/* signup page end */}
 
             {notification && (
