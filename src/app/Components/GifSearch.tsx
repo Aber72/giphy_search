@@ -25,7 +25,7 @@ const GifSearch: React.FC = () => {
   const [gifs, setGifs] = useState<Gif[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
 
-  const apiKey = '9Ixlv3DWC1biJRI57RanyL7RTbfzz0o7';
+  const apiKey = 'GlVGYHkr3WSBnllca54iNt0yFbjz7L65';
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(1);
   const gifsPerPage = 10;
@@ -141,7 +141,7 @@ const GifSearch: React.FC = () => {
 {/* footer implementation for pages */}
           {totalPages > 0 && (
   <div className="mt-4 p-4">
-    <button onClick={handlePrevPage} className="mr-2 px-4 py-2 text-black font-bold rounded shadow-lg">
+    <button onClick={handlePrevPage} className="mr-2 px-4 py-2 text-black font-bold rounded shadow-lg hover:bg-gray-300">
       Previous
     </button>
     <span className="text-black">
@@ -159,7 +159,7 @@ const GifSearch: React.FC = () => {
       . . . 
 
     </span>
-    <button onClick={handleNextPage} className="ml-2 px-4 py-2 text-black font-bold rounded shadow-lg">
+    <button onClick={handleNextPage} className="ml-2 px-4 py-2 text-black font-bold rounded shadow-lg hover:bg-gray-300">
       Next
     </button>
   </div>
