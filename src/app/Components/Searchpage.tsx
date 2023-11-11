@@ -52,9 +52,9 @@ const GifSearch: React.FC = () => {
         const docRef = await addDoc(collection(db, 'favorites'), favoriteData);
         console.log('Favorite GIF stored with ID:', docRef.id);
 
-        toast.success('GIF  added to favorite successfully!', {
+        toast.success('Added to favorite !', {
           position: 'top-right',
-          autoClose: 500,
+          autoClose: 800,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,

@@ -52,7 +52,7 @@ const Favorites: React.FC = () => {
       setUserFavorites((prevFavorites) => prevFavorites.filter((fav) => fav.id !== favoriteId));
       toast.success('Removed From Favourite!', {
         position: 'top-right',
-        autoClose: 500,
+        autoClose: 800,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
