@@ -1,6 +1,7 @@
 // components/Dropdown.tsx
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { MdAccountBox, MdLockOutline } from 'react-icons/md'
 import { auth } from '../../firebase'; // Update the path accordingly
 import { User } from 'firebase/auth'; // Import User type from firebase/auth
 import { useRouter } from 'next/router';
@@ -37,13 +38,13 @@ const Dropdown = () => {
   return (
     <div className="dropdown">
       {user && (
-        <div className="profile bg-black p-2 rounded-full" onClick={toggleDropdown}>
-          <span>👤 Profile</span>
+        <div className="profile bg-black p-2 rounded-full hover:bg-gray-700 " onClick={toggleDropdown}>
+          <span><MdAccountBox className="bg-gray-100 m-2" /></span>
         </div>
       )}
       {isOpen && user && (
-        <div className="dropdown-content">
-          <Link href="/favorite">❤️ Favorites</Link>
+        <div className="dropdown-content ">
+          <Link href="/favorite">⭐Favorites</Link>
           <a onClick={handleLogout} style={{ cursor: 'pointer' }}>Logout</a>
         </div>
       )}

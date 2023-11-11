@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { MdClear} from 'react-icons/md';
 import { GetServerSideProps, GetServerSidePropsResult, GetServerSidePropsContext  } from 'next';
 import { ParsedUrlQuery } from 'querystring';
 import { User } from 'firebase/auth'
@@ -51,7 +52,7 @@ const Favorites: React.FC = () => {
       setUserFavorites((prevFavorites) => prevFavorites.filter((fav) => fav.id !== favoriteId));
       toast.success('Removed From Favourite!', {
         position: 'top-right',
-        autoClose: 3000,
+        autoClose: 500,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -72,8 +73,8 @@ const Favorites: React.FC = () => {
     <div className="container mx-auto p-4">
       <ToastContainer />
       <div className="flex justify-between items-center mb-4">
-        <h1 className="text-2xl font-bold  text-black">Favorites ❤️</h1>
-        <Link href="/search" className='p-4 rounded-full shadow-lg bg-black'>Home</Link>
+        <h1 className="text-2xl font-bold  text-black">Favorites ⭐</h1>
+        <Link href="/search" className='p-4 rounded-lg shadow-lg bg-black text-white hover:bg-gray-700'>Home</Link>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -86,9 +87,9 @@ const Favorites: React.FC = () => {
             />
             <button
               onClick={() => handleRemoveFavorite(favorite.id)}
-              className="absolute top-2 right-2 px-2 py-1 text-black rounded-full bg-white"
+              className="absolute down-2 right-2 px-2 py-1"
             >
-              ❌Remove
+              <MdClear className="bg-gray-100 m-2 w-8 h-8 hover:bg-slate-400 text-red-700" />
             </button>
             <p className="text-black p-2">{favorite.gifTitle}</p>
             <p className="text-black p-2">@{favorite.gifUsername}</p>

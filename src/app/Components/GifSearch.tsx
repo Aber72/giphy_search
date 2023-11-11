@@ -54,7 +54,7 @@ const GifSearch: React.FC = () => {
 
         toast.success('GIF favorited successfully!', {
           position: 'top-right',
-          autoClose: 3000,
+          autoClose: 500,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
@@ -131,7 +131,7 @@ const GifSearch: React.FC = () => {
                   style={{ maxWidth: '550px', maxHeight: '550px' }}
                 />
                 <p className="text-black p-2 inline-block">{gif.title}</p>
-                <button onClick={() => handleFavorite(gif)} className="p-2 shadow-lg rounded-full inline-block">
+                <button onClick={() => handleFavorite(gif)} className="p-2 shadow-lg rounded-full inline-block hover:bg-gray-400">
                   ⭐
                 </button>
                 <p className="text-black p-2">@{gif.username}</p>
