@@ -38,7 +38,7 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch, loading }) => {
         <button
           onClick={handleSearch}
           disabled={loading}
-          className="p-2 bg-black text-white rounded-full ml-2 hover:bg-gray-800"
+          className="p-2 bg-black text-white rounded-lg ml-2 hover:bg-gray-800"
         >
           {loading ? 'Searching...' : 'Search'}
         </button>
