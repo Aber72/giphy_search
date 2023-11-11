@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { auth } from '../../firebase'; // Update the path accordingly
-import { User } from 'firebase/auth'; // Import User type from firebase/auth
+import { User } from 'firebase/auth'; //   Import User type from firebase/auth
 import { useRouter } from 'next/router';
 
 const Dropdown = () => {
@@ -48,7 +48,7 @@ const Dropdown = () => {
         </div>
       )}
     </div>
-  );
+   );
 };
 
 export default Dropdown;
