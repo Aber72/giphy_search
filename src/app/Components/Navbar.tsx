@@ -26,13 +26,13 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch, loading }) => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-center p-4">
       
-      <div className="flex items-center w-full p-3 bg-white rounded-full">
+      <div className="flex items-center w-full p-3 bg-white rounded-lg">
         <input
           type="text"
           value={query}
           onChange={handleInputChange}
           placeholder="Search for GIFs"
-          className="w-full p-2 border rounded-full outline-2 border-black shadow-lg "
+          className="w-full p-2 border rounded-lg outline-2 border-black shadow-lg "
           style={{ color: 'black', outline: 'none', width: '70%',backgroundColor:'#f6f3f4' }}
         />
         <button
