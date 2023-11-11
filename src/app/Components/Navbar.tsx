@@ -31,14 +31,14 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch, loading }) => {
           type="text"
           value={query}
           onChange={handleInputChange}
-          placeholder="🔎Search for GIFs"
-          className="w-full p-2 border rounded-lg outline-2 border-black shadow-lg "
-          style={{ color: 'black', outline: 'none', width: '70%',backgroundColor:'#f6f3f4' }}
+          placeholder="🔍Search for GIFs"
+          className="w-full p-2 border-2 rounded-lg outline-2 border-black shadow-lg "
+          style={{ color: 'black', width: '70%',backgroundColor:'#f6f3f4' }}
         />
         <button
           onClick={handleSearch}
           disabled={loading}
-          className="p-2 bg-black text-white rounded-lg ml-2 hover:bg-gray-800"
+          className="p-2 bg-black text-white rounded-lg ml-2 hover:bg-gray-700"
         >
           {loading ? 'Searching...' : 'Search'}
         </button>

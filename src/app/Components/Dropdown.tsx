@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { auth } from '../../firebase'; // Update the path accordingly
-import { User } from 'firebase/auth'; //   Import User type from firebase/auth
+import { User } from 'firebase/auth'; // Import User type from firebase/auth
 import { useRouter } from 'next/router';
 
 const Dropdown = () => {
@@ -37,18 +37,18 @@ const Dropdown = () => {
   return (
     <div className="dropdown">
       {user && (
-        <div className="profile bg-black p-4 rounded-full text-white" onClick={toggleDropdown}>
-          <span>🧔🏻</span>
+        <div className="profile bg-black p-2 rounded-full" onClick={toggleDropdown}>
+          <span>👤 Profile</span>
         </div>
       )}
       {isOpen && user && (
         <div className="dropdown-content">
-          <Link href="/favorite">⭐Favorites</Link>
+          <Link href="/favorite">❤️ Favorites</Link>
           <a onClick={handleLogout} style={{ cursor: 'pointer' }}>Logout</a>
         </div>
       )}
     </div>
-   );
+  );
 };
 
 export default Dropdown;
