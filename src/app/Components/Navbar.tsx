@@ -1,7 +1,7 @@
 /* @jsxImportSource react */
 'use client';
 import React from 'react';
-import Dropdown from './UserBox';
+import Dropdown from './Dropdown';
 interface NavbarProps {
   onSearch: (query: string) => void;
   loading: boolean;
@@ -38,7 +38,7 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch, loading }) => {
         <button
           onClick={handleSearch}
           disabled={loading}
-          className="p-2 bg-black text-white rounded-lg ml-2 hover:bg-gray-700"
+          className="p-2 bg-black text-white rounded-lg ml-2 hover:bg-gray-800"
         >
           {loading ? 'Searching...' : 'Search'}
         </button>

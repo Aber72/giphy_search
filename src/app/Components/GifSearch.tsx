@@ -25,7 +25,7 @@ const GifSearch: React.FC = () => {
   const [gifs, setGifs] = useState<Gif[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
 
-  const apiKey = 'GlVGYHkr3WSBnllca54iNt0yFbjz7L65';
+  const apiKey = '9Ixlv3DWC1biJRI57RanyL7RTbfzz0o7';
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(1);
   const gifsPerPage = 10;
@@ -52,7 +52,7 @@ const GifSearch: React.FC = () => {
         const docRef = await addDoc(collection(db, 'favorites'), favoriteData);
         console.log('Favorite GIF stored with ID:', docRef.id);
 
-        toast.success('Added to favorite !', {
+        toast.success('Added to favorite!', {
           position: 'top-right',
           autoClose: 800,
           hideProgressBar: false,
@@ -68,7 +68,7 @@ const GifSearch: React.FC = () => {
 
       toast.error('Error favoriting GIF. Please try again.', {
         position: 'top-right',
-        autoClose: 3000,
+        autoClose: 800,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -131,7 +131,7 @@ const GifSearch: React.FC = () => {
                   style={{ maxWidth: '550px', maxHeight: '550px' }}
                 />
                 <p className="text-black p-2 inline-block">{gif.title}</p>
-                <button onClick={() => handleFavorite(gif)} className="p-2 shadow-lg rounded-full inline-block hover:bg-gray-400">
+                <button onClick={() => handleFavorite(gif)} className="p-2 shadow-lg rounded-full inline-block hover:bg-gray-300">
                   ⭐
                 </button>
                 <p className="text-black p-2">@{gif.username}</p>

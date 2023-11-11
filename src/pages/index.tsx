@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import GifSearch from '../app/Components/Searchpage';
+import GifSearch from '../app/Components/GifSearch';
 import '../app/globals.css';
 import Login from './login';
 const Home: React.FC = () => {
@@ -9,7 +9,7 @@ const Home: React.FC = () => {
       
 
       <main>
-        
+        <h1>Welcome to My Next.js App</h1>
         <Login />
       </main>
 

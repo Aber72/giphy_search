@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { MdClear} from 'react-icons/md';
+import { MdClear } from 'react-icons/md';
 import { GetServerSideProps, GetServerSidePropsResult, GetServerSidePropsContext  } from 'next';
 import { ParsedUrlQuery } from 'querystring';
 import { User } from 'firebase/auth'
@@ -87,9 +87,9 @@ const Favorites: React.FC = () => {
             />
             <button
               onClick={() => handleRemoveFavorite(favorite.id)}
-              className="absolute down-2 right-2 px-2 py-1"
+              className="absolute down-2 right-2 px-2 py-1 text-black rounded-full "
             >
-              <MdClear className="bg-gray-100 m-2 w-8 h-8 hover:bg-slate-400 text-red-700" />
+              <MdClear className="bg-gray-100 w-8 h-8 rounded-full text-red-700 hover:bg-gray-300" />
             </button>
             <p className="text-black p-2">{favorite.gifTitle}</p>
             <p className="text-black p-2">@{favorite.gifUsername}</p>
