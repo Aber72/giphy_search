@@ -110,7 +110,7 @@ export default function Signup() {
                     required
                   />
                 </div>
-                {/* textbox for Password end */}
+                {/* textbox for Password end */ }
 
                 {/* sign in Button starts*/}
 
