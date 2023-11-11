@@ -38,7 +38,7 @@ const Dropdown = () => {
     <div className="dropdown">
       {user && (
         <div className="profile bg-black p-2 rounded-full text-white" onClick={toggleDropdown}>
-          <span>👤 Profile</span>
+          <span>🧑‍🦱Profile</span>
         </div>
       )}
       {isOpen && user && (
