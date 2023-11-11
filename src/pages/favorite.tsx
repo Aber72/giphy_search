@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import Favorites from '../app/Components/FavroitGif';
+import Favorites from '../app/Components/FavBox';
 import { withAuth } from '../app/withAuth';
 
 import '../app/globals.css';

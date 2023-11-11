@@ -1,7 +1,7 @@
 /* @jsxImportSource react */
 'use client';
 import React from 'react';
-import Dropdown from './Dropdown';
+import Dropdown from './UserBox';
 interface NavbarProps {
   onSearch: (query: string) => void;
   loading: boolean;
