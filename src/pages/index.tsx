@@ -9,7 +9,7 @@ const Home: React.FC = () => {
       
 
       <main>
-        <h1>Welcome to My Next.js App</h1>
+     
         <Login />
       </main>
 
