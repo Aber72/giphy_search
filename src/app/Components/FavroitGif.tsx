@@ -45,7 +45,7 @@ const Favorites: React.FC = () => {
     <div className="container mx-auto p-4">
       <div className="flex justify-between items-center mb-4">
         <h1 className="text-2xl font-bold ">Favorites ❤️</h1>
-        <Link href="/search" className='p-4 rounded-full shadow-lg bg-black'>Home</Link>
+        <Link href="/search" className='p-4 rounded-full shadow-lg bg-black text-white'>Home</Link>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
