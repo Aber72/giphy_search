@@ -101,7 +101,7 @@ export default function Login() {
             {/* register section started  */}
 
         <div className="w-full md:w-2/5 bg-black text-white rounded-tr-2xl rounded-br-2xl md:py-10 px-4 md:px-12">
-          <h2 className="text-xl md:text-3xl font-bold mb-2">Let's Start Searching GIFs!</h2>
+          <h2 className="text-xl md:text-3xl font-bold mb-2">Lets Start Searching GIFs!</h2>
           <div className="border-2 w-6 md:w-10 border-white inline-block mb-2 md:ml-16"></div>
           <p className="mb-6 md:mb-10">Fill up the personal info and start up your journey.</p>
           <Link href="/signup">
